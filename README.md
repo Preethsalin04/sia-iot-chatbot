@@ -70,3 +70,6 @@ git clone https://github.com/yourusername/chatbot-project.git
 cd chatbot-project
 python app.py
 ```
+## Hardware Requirements 
+* - Raspberry Pi 5
+  - Speaker
