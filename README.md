@@ -74,3 +74,5 @@ python app.py
 ## Hardware Requirements 
 * - Raspberry Pi 5
   - Speaker
+  - Microphone
+  - Powersupply charger
