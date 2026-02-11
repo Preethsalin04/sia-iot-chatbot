@@ -16,18 +16,18 @@ An intelligent chatbot with both voice and text interaction capabilities, built 
 
 
 ### Installation
-# Core dependencies
+##Create a requirements.txt file:
+```bash
 tensorflow>=2.10.0
 numpy>=1.21.0
-scikit-learn>=1.0.0
 gTTS>=2.3.0
 pygame>=2.1.0
 SpeechRecognition>=3.10.0
-
-# Additional utilities (optional but recommended)
-python-dateutil>=2.8.2
-pydub>=0.25.1
-🛠️ Installation Methods
+scikit-learn>=1.0.0
+textblob>=0.17.1  # For sentiment analysis
+python-dateutil>=2.8.2  # For date handling
+pydub>=0.25.1  # For audio processing
+```
 Method 1: Basic Installation (Recommended)
 Run this command in your terminal/command prompt:
 
@@ -41,37 +41,45 @@ Run:
 bash
 pip install -r requirements.txt
 Method 3: One-Command Installation
-bash
+```bash
 pip install tensorflow==2.10.0 numpy==1.23.5 scikit-learn==1.2.2 gTTS==2.3.2 pygame==2.5.0 SpeechRecognition==3.10.0
-🔧 System-Specific Instructions
+```
+##- 🔧 System-Specific Instructions
 Windows
 powershell
-# 1. Install Python (3.8 or higher)
+```bash# 1. Install Python (3.8 or higher)
 # Download from python.org
-
+```
 # 2. Open Command Prompt as Administrator
 
 # 3. Install dependencies
-python -m pip install --upgrade pip
+```bash
+g python -m pip install --upgrade pip
 pip install tensorflow-cpu numpy scikit-learn gTTS pygame SpeechRecognition
-
+```
+```bash
 # 4. For TensorFlow with GPU support (if you have NVIDIA GPU):
 pip install tensorflow
 macOS
-bash
+```
+```bash
 # 1. Install Homebrew if not installed:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
+```
+```bash
 # 2. Install Python:
 brew install python
-
+```
+```bash
 # 3. Install PortAudio for microphone support:
 brew install portaudio
-
+```
+```bash
 # 4. Install Python packages:
 pip3 install tensorflow-macos numpy scikit-learn gTTS pygame SpeechRecognition
 Linux (Ubuntu/Debian)
-bash
+```
+```bash
 # 1. Update package list
 sudo apt update
 
@@ -82,8 +90,8 @@ sudo apt install python3 python3-pip python3-dev portaudio19-dev
 pip3 install tensorflow numpy scikit-learn gTTS pygame SpeechRecognition
 
 # 4. Fix pygame sound issues (if any):
-sudo apt install libsdl2-mixer-2.0-0 libsdl2-image-2.0-0 libsdl2-2.0-0)
-
+sudo apt install libsdl2-mixer-2.0-0 libsdl2-image-2.0-0 libsdl2-2.0-0
+```
 ### Setup
 1. Clone the repository:
 ```bash
