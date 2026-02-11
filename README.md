@@ -34,16 +34,18 @@ Create a requirements.txt file:
 # Method 2: Using requirements.txt
 ** Save the requirements.txt file in your project folder
 ```
-##Run:
-pip install -r requirements.txt
-Method 3: One-Command Installation
+## Run:
+``` bash pip install -r requirements.txt
+```
+## Method 3: One-Command Installation
 ```bash
 pip install tensorflow==2.10.0 numpy==1.23.5 scikit-learn==1.2.2 gTTS==2.3.2 pygame==2.5.0 SpeechRecognition==3.10.0
 ```
 ## System-Specific Instructions
+```bash
 Windows
 powershell
-```bash
+
 # 1. Install Python (3.8 or higher)
 # Download from python.org
 ```
