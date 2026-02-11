@@ -28,29 +28,8 @@ Create a requirements.txt file:
 ** python-dateutil>=2.8.2  # For date handling
 ** pydub>=0.25.1  # For audio processing
 ```
-
-```bash
-** pip install tensorflow numpy scikit-learn gTTS pygame SpeechRecognition
-# Method 2: Using requirements.txt
-** Save the requirements.txt file in your project folder
-```
-## Run:
-``` bash pip install -r requirements.txt
-```
-## Method 3: One-Command Installation
-```bash
-pip install tensorflow==2.10.0 numpy==1.23.5 scikit-learn==1.2.2 gTTS==2.3.2 pygame==2.5.0 SpeechRecognition==3.10.0
-```
-## System-Specific Instructions
-```bash
-Windows
-powershell
-
-# 1. Install Python (3.8 or higher)
-# Download from python.org
-```
-# 2. Open Command Prompt as Administrator
-# 3. Install dependencies
+# Open Command Prompt as Administrator
+# Install dependencies
 ```bash
 g python -m pip install --upgrade pip
 pip install tensorflow-cpu numpy scikit-learn gTTS pygame SpeechRecognition
@@ -89,3 +68,5 @@ sudo apt install libsdl2-mixer-2.0-0 libsdl2-image-2.0-0 libsdl2-2.0-0
 ```bash
 git clone https://github.com/yourusername/chatbot-project.git
 cd chatbot-project
+python app.py
+```
