@@ -31,13 +31,30 @@ Create a requirements.txt file:
 # Open Command Prompt as Administrator
 # Install dependencies
 ```bash
-g python -m pip install --upgrade pip
+## Windows
+# 1. Install Python (3.8 or higher)
+# Download from python.org
+# 2. Open Command Prompt as Administrator
+# 3. Install dependencies
+python -m pip install --upgrade pip
 pip install tensorflow-cpu numpy scikit-learn gTTS pygame SpeechRecognition
-
 # 4. For TensorFlow with GPU support (if you have NVIDIA GPU):
 pip install tensorflow
-macOS
 
+## Ubuntu
+## Install Python packages:
+pip3 install tensorflow-macos numpy scikit-learn gTTS pygame SpeechRecognition
+Linux (Ubuntu/Debian)
+# 1. Update package list
+sudo apt update
+# 2. Install system dependencies
+sudo apt install python3 python3-pip python3-dev portaudio19-dev
+# 3. Install Python packages
+pip3 install tensorflow numpy scikit-learn gTTS pygame SpeechRecognition
+# 4. Fix pygame sound issues (if any):
+sudo apt install libsdl2-mixer-2.0-0 libsdl2-image-2.0-0 libsdl2-2.0-0
+
+## macOS
 # 1. Install Homebrew if not installed:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -49,19 +66,6 @@ brew install portaudio
 
 # 4. Install Python packages:
 pip3 install tensorflow-macos numpy scikit-learn gTTS pygame SpeechRecognition
-Linux (Ubuntu/Debian)
-
-# 1. Update package list
-sudo apt update
-
-# 2. Install system dependencies
-sudo apt install python3 python3-pip python3-dev portaudio19-dev
-
-# 3. Install Python packages
-pip3 install tensorflow numpy scikit-learn gTTS pygame SpeechRecognition
-
-# 4. Fix pygame sound issues (if any):
-sudo apt install libsdl2-mixer-2.0-0 libsdl2-image-2.0-0 libsdl2-2.0-0
 ```
 ### Setup
 1. Clone the repository:
