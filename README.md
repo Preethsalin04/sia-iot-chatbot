@@ -15,29 +15,74 @@ An intelligent chatbot with both voice and text interaction capabilities, built 
 - 💾 **Model Persistence**: Saves trained model for future use
 
 
-## Installation
--  **Install packages
--  import json
-import numpy as np
-import webbrowser
-import os
-from tensorflow.keras.models import Sequential, load_model
-from tensorflow.keras.layers import Dense, Embedding, LSTM, GlobalMaxPooling1D
-from tensorflow.keras.preprocessing.text import Tokenizer
-from tensorflow.keras.preprocessing.sequence import pad_sequences
-from sklearn.preprocessing import LabelEncoder
-from gtts import gTTS
-import pygame
-import uuid
-import random
-import speech_recognition as sr
-import time
-import warnings
-import wave
-warnings.filterwarnings("ignore")
-### Prerequisites
-- Python 3.8 or higher
-- Microphone (for voice mode)
+### Installation
+# Core dependencies
+tensorflow>=2.10.0
+numpy>=1.21.0
+scikit-learn>=1.0.0
+gTTS>=2.3.0
+pygame>=2.1.0
+SpeechRecognition>=3.10.0
+
+# Additional utilities (optional but recommended)
+python-dateutil>=2.8.2
+pydub>=0.25.1
+🛠️ Installation Methods
+Method 1: Basic Installation (Recommended)
+Run this command in your terminal/command prompt:
+
+bash
+pip install tensorflow numpy scikit-learn gTTS pygame SpeechRecognition
+Method 2: Using requirements.txt
+Save the requirements.txt file in your project folder
+
+Run:
+
+bash
+pip install -r requirements.txt
+Method 3: One-Command Installation
+bash
+pip install tensorflow==2.10.0 numpy==1.23.5 scikit-learn==1.2.2 gTTS==2.3.2 pygame==2.5.0 SpeechRecognition==3.10.0
+🔧 System-Specific Instructions
+Windows
+powershell
+# 1. Install Python (3.8 or higher)
+# Download from python.org
+
+# 2. Open Command Prompt as Administrator
+
+# 3. Install dependencies
+python -m pip install --upgrade pip
+pip install tensorflow-cpu numpy scikit-learn gTTS pygame SpeechRecognition
+
+# 4. For TensorFlow with GPU support (if you have NVIDIA GPU):
+pip install tensorflow
+macOS
+bash
+# 1. Install Homebrew if not installed:
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# 2. Install Python:
+brew install python
+
+# 3. Install PortAudio for microphone support:
+brew install portaudio
+
+# 4. Install Python packages:
+pip3 install tensorflow-macos numpy scikit-learn gTTS pygame SpeechRecognition
+Linux (Ubuntu/Debian)
+bash
+# 1. Update package list
+sudo apt update
+
+# 2. Install system dependencies
+sudo apt install python3 python3-pip python3-dev portaudio19-dev
+
+# 3. Install Python packages
+pip3 install tensorflow numpy scikit-learn gTTS pygame SpeechRecognition
+
+# 4. Fix pygame sound issues (if any):
+sudo apt install libsdl2-mixer-2.0-0 libsdl2-image-2.0-0 libsdl2-2.0-0)
 
 ### Setup
 1. Clone the repository:
