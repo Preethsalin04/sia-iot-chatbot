@@ -72,7 +72,7 @@ cd chatbot-project
 python app.py
 ```
 ## Hardware Requirements 
-* - Raspberry Pi 5
+  - Raspberry Pi 5
   - Speaker
   - Microphone
   - Powersupply charger
