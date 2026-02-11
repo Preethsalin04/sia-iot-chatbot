@@ -57,13 +57,10 @@ sudo apt install libsdl2-mixer-2.0-0 libsdl2-image-2.0-0 libsdl2-2.0-0
 ## macOS
 # 1. Install Homebrew if not installed:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
 # 2. Install Python:
 brew install python
-
 # 3. Install PortAudio for microphone support:
 brew install portaudio
-
 # 4. Install Python packages:
 pip3 install tensorflow-macos numpy scikit-learn gTTS pygame SpeechRecognition
 ```
