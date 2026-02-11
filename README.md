@@ -29,7 +29,7 @@ cd chatbot-project
 
 An intelligent chatbot with both voice and text interaction capabilities, built using TensorFlow/Keras for natural language processing.
 
-## Features
+###Features
 
 - 🤖 **Dual Mode Interaction**: Switch between voice and text input
 - 🎤 **Speech Recognition**: Built-in voice recognition using Google Speech API
